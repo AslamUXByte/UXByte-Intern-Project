@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Button, Link, Card, CardContent, Typography, CardActions, Box } from '@mui/material';
+import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Button, Link, Card, CardContent, Typography, CardActions, Box, TextField } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpIcon from '@mui/icons-material/Help';
@@ -120,27 +120,24 @@ const SignIn = () => {
     //   </div>
     // </>
     <>
-    <Box sx={{  display:'flex',justifyContent:"center" ,alignItems:"center"}}>
-    <Card sx={{ maxWidth: 340, }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="div">
-          
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+    <Box sx={{  display:'flex',justifyContent:"center" ,alignItems:"center", height:"100vh"}}>
+    <Card sx={{ width: 340,height:300, p:2 }}>
+      <CardContent > 
+        <Typography sx={{fontWeight:600, fontSize:32, }}>Login</Typography>
+        <TextField 
+        placeholder='Email'
+        sx={{mt:2}}
+        fullWidth
+        />
+         <TextField 
+        placeholder='Password'
+        sx={{mt:2}}
+        fullWidth
+        />
+              </CardContent>
+      
+        <Button size="small" variant='contained' fullWidth>LOGIN</Button>
+     
     </Card>
     </Box>
     
