@@ -1,0 +1,104 @@
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .sign-in-form {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f4f4;
+    
+  }
+  
+  .sign-in-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .or-divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .or-text {
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .divider {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #fff5f5;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+  /* Styling for Google, Facebook, and Github icons */
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .social-icon {
+    margin: 0 5px;
+    border-radius: 18px;
+    overflow: hidden; /* Ensures the image doesn't overflow outside the box */
+  }
+  
+  .social-icon img {
+    
+    height: auto;
+  }
+
+
+  .orange-link {
+    color: rgb(240, 158, 4);
+    /* Additional styles if needed */
+  }
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .help-icon-container {
+    margin-left: 20px;
+    
+  }
+  
+  .login-icon-container {
+    flex-grow: 1; /* This will make the image expand to fill the remaining space */
+    display: flex;
+    justify-content: center;
+    margin-right: 1200px;
+  }
+  
+  .settings-icon-container {
+    margin-right: 20px;
+  }
+  
