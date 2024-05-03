@@ -1,16 +1,30 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
- <nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/products">Products</a></li>
-    <li><a href="/cart">Cart</a></li>
-    <li><a href="/login">Login</a></li>
-    <li><a href="/register">Register</a></li>
-  </ul>
+    <nav className="navbar">
+    <div className="navbar-container">
+        <div className="brand">
+        <Link to="/" className="navbar-logo" style={{ textDecoration: 'none', color: 'black',fontWeight: 'bold' }}>
+                ZONE
+            </Link>
+        </div>
+        <div className="nav-links">
+            <Link to="/" className="nav-item">Home</Link>
+            <Link to="/components" className="nav-item">Components</Link>
+            <Link to="/pages" className="nav-item">Pages</Link>
+            <Link to="/docs" className="nav-item">Docs</Link>
+        </div>
+        <div className="icons">
+            <input type="text" placeholder="Search" className="search-icon" />
+            <span className="settings-icon">⚙️</span>
+            <button className="buy-button">Buy Now</button>
+        </div>
+    </div>
 </nav>
+ 
 );
 }
 
