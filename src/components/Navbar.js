@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import AddIcon from '@mui/icons-material/Add';
+//for exmpale
 
 const Navbar = () => {
   return (
@@ -11,6 +13,7 @@ const Navbar = () => {
                 ZONE
             </Link>
         </div>
+        <AddIcon/>
         <div className="nav-links">
             <Link to="/" className="nav-item">Home</Link>
             <Link to="/components" className="nav-item">Components</Link>

@@ -5,7 +5,7 @@ import Signin from './components/Authentication/Signin';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-
+import React from 'react';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
     <Routes>
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='/home' element={<Home/>}/> 
     </Routes>
     </div>
     
