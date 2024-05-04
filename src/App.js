@@ -4,6 +4,7 @@ import Signup from './components/Authentication/Signup';
 import Signin from './components/Authentication/Signin';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from './components/Home';
+import { Navbar } from 'react-bootstrap';
 
 
 function App() {
