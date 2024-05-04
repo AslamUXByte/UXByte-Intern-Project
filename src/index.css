@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.css {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: '__Public_Sans_f258fb', '__Public_Sans_Fallback_f258fb', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #637381;
+}
+.css-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.css-2 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: '__Public_Sans_f258fb', '__Public_Sans_Fallback_f258fb', Helvetica, Arial, sans-serif;
+    opacity: 0.48;
+}
+.css-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+
+}

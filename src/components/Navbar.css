@@ -1,21 +1,21 @@
 .navbar {
     background-color: white;
     color: black;
-    padding: 10px 0;
+    padding: 25px 0;
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
 .orange-dot {
     position: absolute;
     top: 65%;
-    right: -15px; /* Adjust this value to align the dot properly */
+    right: -15px; 
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
