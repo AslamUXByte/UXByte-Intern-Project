@@ -1,7 +1,7 @@
 .navbar {
     background-color: white;
     color: black;
-    padding: 10pgitx 0;
+    padding: 10px 0;
 }
 
 .navbar-container {
@@ -12,6 +12,16 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+.orange-dot {
+    position: absolute;
+    top: 65%;
+    right: -15px; /* Adjust this value to align the dot properly */
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    border-radius: 50%;
+  }
 
 .brand {
     font-size: 1.5rem;

@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import AddIcon from '@mui/icons-material/Add';
-//for exmpale
+import SearchIcon from '@mui/icons-material/Search';
+
 
 const Navbar = () => {
   return (
     <nav className="navbar">
     <div className="navbar-container">
         <div className="brand">
-        <Link to="/" className="navbar-logo" style={{ textDecoration: 'none', color: 'black',fontWeight: 'bold' }}>
+        <Link to="/" className="navbar-logo" style={{ textDecoration: 'none', color: 'black',fontWeight: 'bold',fontFamily: 'Arial, sans-serif', position: 'relative'}}>
                 ZONE
+                <span className="orange-dot"></span>
             </Link>
         </div>
-        <AddIcon/>
         <div className="nav-links">
             <Link to="/" className="nav-item">Home</Link>
             <Link to="/components" className="nav-item">Components</Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link to="/docs" className="nav-item">Docs</Link>
         </div>
         <div className="icons">
-            <input type="text" placeholder="Search" className="search-icon" />
+            <SearchIcon/>
             <span className="settings-icon">⚙️</span>
             <button className="buy-button">Buy Now</button>
         </div>
