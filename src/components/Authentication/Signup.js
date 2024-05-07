@@ -1,4 +1,4 @@
-import { Box, CardContent, TextField, Typography, Button, Select, MenuItem } from '@mui/material';
+import { Box, CardContent, TextField, Typography,Button, Select, MenuItem } from '@mui/material';
 import React, { useState } from 'react';
 
 const SignUpPage = () => {
@@ -46,44 +46,39 @@ const SignUpPage = () => {
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh" }}>
       <CardContent>
-        <Typography variant="h5" sx={{ textAlign: 'center', mb: 2 }}>GET START</Typography>
+      <Typography variant="h5" sx={{ textAlign: 'center', mb: 2 }}>GET START</Typography>
 
-        <Typography sx={{ fontWeight: 600 }}>Full Name</Typography>
         <TextField
-          placeholder='Fullname'
+          placeholder='Full Name'
           sx={{ mt: 1, width: '100%' }}
           value={fullName}
           onChange={handleFullNameChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Email</Typography>
         <TextField
           placeholder='Email'
-          sx={{ mt: 1, width: '100%' }}
+          sx={{ mt: 2, width: '100%' }}
           value={email}
           onChange={handleEmailChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Password</Typography>
         <TextField
           placeholder='Password'
-          sx={{ mt: 1, width: '100%' }}
+          sx={{ mt: 2, width: '100%' }}
           type="password"
           value={password}
           onChange={handlePasswordChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Retype Password</Typography>
         <TextField
           placeholder='Retype Password'
-          sx={{ mt: 1, width: '100%' }}
+          sx={{ mt: 2, width: '100%' }}
           type="password"
           value={retypePassword}
           onChange={handleRetypePasswordChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Phone Number</Typography>
-        <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
           <Select
             value={countryCode}
             onChange={handleCountryCodeChange}
@@ -108,6 +103,7 @@ const SignUpPage = () => {
 };
 
 export default SignUpPage;
+
 
 
 
