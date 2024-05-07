@@ -6,12 +6,14 @@ import H3 from './H3';
 import Feature from './Feature';
 import Designer from './Designer';
 import Question from './Question';
-
+import Navbar from '../Navbar';
 
 
 const Home = () => {
   return (
+    
     <div>
+      <Navbar/>
     <Grid container spacing={2} sx={{ backgroundColor: '#F5F5F5', textAlign: 'center', height: '80vh' }}>
       <Grid item xs={5} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
         <Typography variant="h6" style={{ color: '#212B36', fontSize: '3.625rem', fontWeight: '700', lineHeight: '1.25', fontFamily: "'__Barlow_92d964','__Barlow_Fallback_92d964',Helvetica,Arial,sans-serif" , paddingLeft: '120px', paddingBottom:'50px' }}>
