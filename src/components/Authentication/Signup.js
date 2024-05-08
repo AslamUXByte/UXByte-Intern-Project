@@ -45,7 +45,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh", width: '100vw', bgcolor: 'white' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: "100vh", width: '100vw', bgcolor: 'white' }}>
       <CardContent sx={{ width: 300 }}>
         <Typography variant="h5" sx={{ textAlign: 'starting', mb: 2, fontWeight: "bold" }}>GET START</Typography>
         <p sx={{ textAlign: 'starting', mb: 2 }}>Already have an account? <span style={{ color: 'orange' }}>Login</span></p>
@@ -101,9 +101,9 @@ const SignUpPage = () => {
         <Button size="large" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'black' }}>Register</Button>
         <p sx={{ textAlign: 'center', mb: 2 }}>I agree to <u>Terms of Service</u> and <u>Privacy Policy</u></p>
         <Typography variant="body1" sx={{ textAlign: 'center', mb: 2 }}>or continue with</Typography>
-        </CardContent>
-       
-      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
+      </CardContent>
+
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 'auto', mb: 2 }}>
         <Box sx={{ mr: 4 }}>
           <Google sx={{ color: '#DB4437', fontSize: 30 }} />
         </Box>
@@ -115,9 +115,9 @@ const SignUpPage = () => {
         </Box>
       </Box>
     </Box>
-      
-  );  
+  );
 };
 
 export default SignUpPage;
+
 
