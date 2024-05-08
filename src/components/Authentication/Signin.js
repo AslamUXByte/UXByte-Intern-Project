@@ -1,10 +1,9 @@
-import { Box, CardContent, TextField, Typography,  Button, Card  } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { Box, CardContent, TextField, Typography, Button, Card, Grid, Avatar, Link, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Divider } from '@mui/material';
 import React, { useState } from 'react';
-// import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Button, Link, Card, CardContent, Typography, CardActions, Box, TextField } from '@mui/material';
-// import { Visibility, VisibilityOff } from '@mui/icons-material';
-// import SettingsIcon from '@mui/icons-material/Settings';
-// import HelpIcon from '@mui/icons-material/Help';
-// import './SignIn.css';
+
+
+
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -19,142 +18,172 @@ const SignIn = () => {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    // Implement your sign-in logic here, e.g., call an authentication API
     console.log('Signing in with:', email, password);
   };
 
   return (
-    // <>
-    //   <div className="top-bar">
-    //     <div className="login-icon-container">
-    //       <img src="https://miro.medium.com/v2/resize:fit:2400/1*K41119oiymFsKOMIB09PJg.png" alt="Login icon" className="login-icon" height={50} />
-    //     </div>
-    //     <div className="help-settings-container">
-    //       <IconButton edge="start" color="inherit" aria-label="settings">
-    //         <SettingsIcon />
-    //       </IconButton>
-    //       <IconButton edge="start" color="inherit" aria-label="help">
-    //         <HelpIcon />
-    //       </IconButton>
-    //       <Link href="/help" color="inherit" underline="none" className="help-link">
-    //         Need Help
-    //       </Link>
-    //     </div>
-    //   </div>
-    //   <div className="sign-in-container">
-    //     <div className="sign-in-form">
-    //       <h2>Login</h2>
-    //       <p className="Signup-link">
-    //         Don't have an account?{' '}
-    //         <Link href="/Signup" className="orange-link">
-    //           Get started
-    //         </Link>
-    //       </p>
-    //       <form onSubmit={handleSignIn}>
-    //         <div className="form-group">
-    //           <FormControl fullWidth variant="outlined">
-    //             <InputLabel htmlFor="outlined-adornment-email">Email</InputLabel>
-    //             <OutlinedInput
-    //               id="outlined-adornment-email"
-    //               type="email"
-    //               value={email}
-    //               onChange={(e) => setEmail(e.target.value)}
-    //               label="Email"
-    //               required
-    //             />
-    //           </FormControl>
-    //         </div>
-    //         <div className="form-group">
-    //           <FormControl fullWidth variant="outlined">
-    //             <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-    //             <OutlinedInput
-    //               id="outlined-adornment-password"
-    //               type={showPassword ? 'text' : 'password'}
-    //               value={password}
-    //               onChange={(e) => setPassword(e.target.value)}
-    //               endAdornment={
-    //                 <InputAdornment position="end">
-    //                   <IconButton
-    //                     aria-label="toggle password visibility"
-    //                     onClick={handleClickShowPassword}
-    //                     onMouseDown={handleMouseDownPassword}
-    //                     edge="end"
-    //                   >
-    //                     {showPassword ? <VisibilityOff /> : <Visibility />}
-    //                   </IconButton>
-    //                 </InputAdornment>
-    //               }
-    //               label="Password"
-    //               required
-    //             />
-    //           </FormControl>
-    //         </div>
-    //         <div className="form-group">
-    //           <Link href="#" className="forgot-password">Forgot password?</Link>
-    //         </div>
-    //         <Button
-    //           type="submit"
-    //           variant="contained"
-    //           className="login-button"
-    //           fullWidth
-    //           style={{ backgroundColor: '#a9a9a9', color: 'white' }}
-    //         >
-    //           Login
-    //         </Button>
-    //       </form>
-    //       <div className="or-divider">
-    //         <span className="or-text">or continue with</span>
-    //         <hr className="divider" />
-    //       </div>
-    //       <div className="social-buttons">
-    //         <IconButton aria-label="Google" className="social-icon">
-    //           <img src="https://yt3.googleusercontent.com/rhqKhfZPaVKRfPi1UvaoekFcSVkipICyGmshnUT9SYMR2JMI8G40YqtaOqz94Ao5rdu_NE0nAw=s900-c-k-c0x00ffffff-no-rj" alt="Google" />
-    //         </IconButton>
-    //         <IconButton aria-label="Facebook" className="social-icon">
-    //           <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook" />
-    //         </IconButton>
-    //         <IconButton aria-label="Github" className="social-icon">
-    //           <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" />
-    //         </IconButton>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </>
-    <>
-    <Box sx={{  display:'flex',justifyContent:"center" ,alignItems:"center", height:"100vh"}}>
-    <Card sx={{ width: 340,height:300, p:2 }}>
-      <CardContent > 
-        <Typography sx={{fontWeight:600, fontSize:32, }}>Login</Typography>
-        <TextField 
-        placeholder='Email'
-        sx={{mt:2}}
-        fullWidth
-        />
-         <TextField 
-        placeholder='Password'
-        sx={{mt:2}}
-        fullWidth
-        />
-              </CardContent>
-      
-        <Button size="small" variant='contained' fullWidth>LOGIN</Button>
-        
-     
-    </Card>
-    </Box>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </>
+    <Grid container spacing={2} sx={{ textAlign: 'center', height: '80vh' }}>
+      <Grid item xs={8} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
+        <Typography variant="h6">
+          <img style={{ maxWidth: '100%', height: '100%' }} src="https://zone-ui.vercel.app/assets/illustrations/illustration_login.svg" alt="Image Description" />
+        </Typography>
+
+
+      </Grid>
+      <Grid item xs={3} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <Card sx={{ width: 340, height: 600, p: 2,borderRadius:'20px',boxShadow:'-24px 24px 72px -8px rgba(145, 158, 171, 0.24)' }}>
+            <CardContent sx={{ display: 'flex', flexDirection: 'column',textAlign:'left' }}>
+              <Typography sx={{ fontWeight: 600, fontSize: 32, color: '#212B36',}}>Login</Typography>
+
+              <Typography
+          variant="subtitle1" 
+          sx={{
+            fontWeight: 500,
+            fontSize: '0.78rem',
+            opacity: 0.7,
+            fontFamily: "'__Public_Sans_f258fb', '__Public_Sans_Fallback_f258fb', Helvetica, Arial, sans-serif"
+          }}
+        >
+          Don't have an Account? <Link component="span" sx={{ color: '#FF4500',textDecorationColor:'transparent',fontWeight: 500,cursor: 'pointer', '&:hover': {
+              textDecorationColor: '#FF4500',
+            },
+
+ }}>Get Started</Link>
+ <br/><br/>
+        </Typography>
+
+              <TextField
+                placeholder='Email'
+                sx={{ mt: 2,'& fieldset': { borderColor: 'transparent' },backgroundColor:'#DCDCDC' }} // Add this line to customize the TextField outline
+                fullWidth
+                variant="outlined" // Add this line to set the TextField to outlined style
+              />
+ <FormControl sx={{ 
+              mt: 2, 
+              width: '38ch',
+              backgroundColor:'#DCDCDC' ,
+              '& fieldset': { borderColor: 'transparent' },
+              '&:hover': { '& fieldset': { borderColor: 'transparent' } } // remove border on hover
+            }}   >
+            <InputLabel sx={{opacity:'.6'}} htmlFor="outlined-adornment-password">Password</InputLabel>
+            <OutlinedInput
+              id="outlined-adornment-password"
+              type={showPassword ? 'text' : 'password'}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={handleClickShowPassword}
+                    onMouseDown={handleMouseDownPassword}
+                    edge="end"
+                  >
+                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              }
+              label="Password"
+            />
+          </FormControl> 
+<br/>
+                        <Typography sx={{textAlign:'right'}}>
+         <Link  component="span" sx={{ color: '#212B36',opacity: 0.7,textDecorationColor:'#808080',fontSize: '0.80rem',
+fontWeight: 500,cursor: 'pointer', '&:hover': {
+              textDecorationColor: '#212B36',
+            },
+           
+
+ }}>Forgot password?</Link></Typography>
+
+          <Button size="large" variant='contained' sx={{ mt: 2,backgroundColor:'#212B36',borderRadius:'10px',textTransform:'capitalize',height:'50px',fontWeight:'600','&:hover': {
+              backgroundColor: '#212B36',
+              opacity:'.8'
+            }, }}>Login</Button>
+<br/><br/>
+
+
+<Divider><span sx={{color:''}}>or continue with</span></Divider>
+
+<Typography sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
+  <Button 
+    size="small" 
+    variant='contained' 
+    sx={{ 
+      mt: 2, 
+      backgroundColor: 'transparent',
+      borderRadius: '10px',
+      width: '70px',
+      height: '50px',
+      '&:hover': {
+        backgroundColor: '#DCDCDC',
+        opacity: '.5',
+        borderColor: '#212B36'
+      },
+      mr: 1 // Add margin-right for space between buttons
+    }}
+  >
+    <Avatar alt="Remy Sharp" src="https://tse2.mm.bing.net/th?id=OIP.S3ZsU5iH6e3Z2K7lXlES7AHaFj&pid=Api&P=0&h=220" />
+  </Button>
+
+  <Button 
+    size="small" 
+    variant='contained' 
+    sx={{ 
+      mt: 2, 
+      backgroundColor: 'transparent',
+      borderRadius: '10px',
+      width: '70px',
+      height: '50px',
+      '&:hover': {
+        backgroundColor: '#DCDCDC',
+        opacity: '.5',
+        borderColor: '#212B36'
+      },
+      mr: 1 // Add margin-right for space between buttons
+    }}
+  >
+    <Avatar alt="Remy Sharp" src="https://tse2.mm.bing.net/th?id=OIP.sya1-NI80eDxjfTJJlQW9wHaHa&pid=Api&P=0&h=220" />
+  </Button>
+
+  <Button 
+    size="small" 
+    variant='contained' 
+    sx={{ 
+      mt: 2, 
+      backgroundColor: 'transparent',
+      borderRadius: '10px',
+      width: '70px',
+      height: '50px',
+      '&:hover': {
+        backgroundColor: '#DCDCDC',
+        opacity: '.5',
+        borderColor: '#212B36'
+      }
+    }}
+  >
+    <Avatar alt="Remy Sharp" src="https://tse3.mm.bing.net/th?id=OIP.5F69UljXc5LLeM63sxM-6wHaHa&pid=Api&P=0&h=220" />
+  </Button>
+</Typography>
+            </CardContent>
+          </Card>
+        </Box>
+
+
+      </Grid>
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
   );
 
 };
