@@ -101,8 +101,8 @@ const SignUpPage = () => {
         <Button size="large" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'black' }}>Register</Button>
         <p sx={{ textAlign: 'center', mb: 2 }}>I agree to <u>Terms of Service</u> and <u>Privacy Policy</u></p>
         <Typography variant="body1" sx={{ textAlign: 'center', mb: 2 }}>or continue with</Typography>
-      </CardContent>
-
+        </CardContent>
+       
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
         <Box sx={{ mr: 4 }}>
           <Google sx={{ color: '#DB4437', fontSize: 30 }} />
@@ -115,7 +115,8 @@ const SignUpPage = () => {
         </Box>
       </Box>
     </Box>
-  );
+      
+  );  
 };
 
 export default SignUpPage;
