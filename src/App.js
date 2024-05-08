@@ -5,7 +5,7 @@ import Signin from './components/Authentication/Signin';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from './components/Homecomponents/Home';
 import React from 'react';
-
+import landingpage from "src\components\Landingpage\hotdeals.js";
 function App() {
 
   return (
