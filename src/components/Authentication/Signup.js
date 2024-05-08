@@ -1,5 +1,6 @@
 import { Box, CardContent, TextField, Typography, Button, Select, MenuItem } from '@mui/material';
 import React, { useState } from 'react';
+import { Google, Facebook, GitHub } from '@mui/icons-material';
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState('');
@@ -44,46 +45,42 @@ const SignUpPage = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh" }}>
-      <CardContent>
-        <Typography variant="h5" sx={{ textAlign: 'center', mb: 2 }}>GET START</Typography>
+    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: "100vh", width: '100vw', bgcolor: 'white' }}>
+      <CardContent sx={{ width: 300 }}>
+        <Typography variant="h5" sx={{ textAlign: 'starting', mb: 2, fontWeight: "bold" }}>GET START</Typography>
+        <p sx={{ textAlign: 'starting', mb: 2 }}>Already have an account? <span style={{ color: 'orange' }}>Login</span></p>
 
-        <Typography sx={{ fontWeight: 600 }}>Full Name</Typography>
         <TextField
-          placeholder='Fullname'
+          placeholder='Full Name'
           sx={{ mt: 1, width: '100%' }}
           value={fullName}
           onChange={handleFullNameChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Email</Typography>
         <TextField
           placeholder='Email'
-          sx={{ mt: 1, width: '100%' }}
+          sx={{ mt: 2, width: '100%' }}
           value={email}
           onChange={handleEmailChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Password</Typography>
         <TextField
           placeholder='Password'
-          sx={{ mt: 1, width: '100%' }}
+          sx={{ mt: 2, width: '100%' }}
           type="password"
           value={password}
           onChange={handlePasswordChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Retype Password</Typography>
         <TextField
           placeholder='Retype Password'
-          sx={{ mt: 1, width: '100%' }}
+          sx={{ mt: 2, width: '100%' }}
           type="password"
           value={retypePassword}
           onChange={handleRetypePasswordChange}
         />
 
-        <Typography sx={{ fontWeight: 600, mt: 2 }}>Phone Number</Typography>
-        <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
           <Select
             value={countryCode}
             onChange={handleCountryCodeChange}
@@ -101,13 +98,26 @@ const SignUpPage = () => {
           />
         </Box>
 
-        <Button size="small" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'orange' }}>Signup</Button>
+        <Button size="large" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'black' }}>Register</Button>
+        <p sx={{ textAlign: 'center', mb: 2 }}>I agree to <u>Terms of Service</u> and <u>Privacy Policy</u></p>
+        <Typography variant="body1" sx={{ textAlign: 'center', mb: 2 }}>or continue with</Typography>
       </CardContent>
+
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 'auto', mb: 2 }}>
+        <Box sx={{ mr: 4 }}>
+          <Google sx={{ color: '#DB4437', fontSize: 30 }} />
+        </Box>
+        <Box sx={{ mx: 4 }}>
+          <Facebook sx={{ color: '#3b5998', fontSize: 30 }} />
+        </Box>
+        <Box sx={{ ml: 4 }}>
+          <GitHub sx={{ fontSize: 30 }} />
+        </Box>
+      </Box>
     </Box>
   );
 };
 
 export default SignUpPage;
-
 
 
