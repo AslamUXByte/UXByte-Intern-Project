@@ -44,9 +44,9 @@ const SignUpPage = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh" }}>
-      <CardContent>
-      <Typography variant="h5" sx={{ textAlign: 'center', mb: 2 }}>GET START</Typography>
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh",width:'100vw'}}>
+      <CardContent sx={{ width: 500 }}>
+      <Typography variant="h4" sx={{ textAlign: 'center', mb: 2 }}>GET START</Typography>
 
         <TextField
           placeholder='Full Name'
