@@ -1,5 +1,6 @@
-import { Box, CardContent, TextField, Typography,Button, Select, MenuItem } from '@mui/material';
+import { Box, CardContent, TextField, Typography, Button, Select, MenuItem } from '@mui/material';
 import React, { useState } from 'react';
+import { Google, Facebook, GitHub } from '@mui/icons-material';
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState('');
@@ -44,9 +45,10 @@ const SignUpPage = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh",width:'100vw'}}>
-      <CardContent sx={{ width: 500 }}>
-      <Typography variant="h4" sx={{ textAlign: 'center', mb: 2 }}>GET START</Typography>
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: "100vh", width: '100vw', bgcolor: 'white' }}>
+      <CardContent sx={{ width: 300 }}>
+        <Typography variant="h5" sx={{ textAlign: 'starting', mb: 2, fontWeight: "bold" }}>GET START</Typography>
+        <p sx={{ textAlign: 'starting', mb: 2 }}>Already have an account? <span style={{ color: 'orange' }}>Login</span></p>
 
         <TextField
           placeholder='Full Name'
@@ -96,14 +98,25 @@ const SignUpPage = () => {
           />
         </Box>
 
-        <Button size="small" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'orange' }}>Signup</Button>
+        <Button size="large" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'black' }}>Register</Button>
+        <p sx={{ textAlign: 'center', mb: 2 }}>I agree to <u>Terms of Service</u> and <u>Privacy Policy</u></p>
+        <Typography variant="body1" sx={{ textAlign: 'center', mb: 2 }}>or continue with</Typography>
       </CardContent>
+
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
+        <Box sx={{ mr: 4 }}>
+          <Google sx={{ color: '#DB4437', fontSize: 30 }} />
+        </Box>
+        <Box sx={{ mx: 4 }}>
+          <Facebook sx={{ color: '#3b5998', fontSize: 30 }} />
+        </Box>
+        <Box sx={{ ml: 4 }}>
+          <GitHub sx={{ fontSize: 30 }} />
+        </Box>
+      </Box>
     </Box>
   );
 };
 
 export default SignUpPage;
-
-
-
 
