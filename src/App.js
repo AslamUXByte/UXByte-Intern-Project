@@ -5,7 +5,7 @@ import Signin from './components/Authentication/Signin';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from './components/Homecomponents/Home';
 import React from 'react';
-import landingpage from "src\components\Landingpage\hotdeals.js";
+import Landing from './components/Landingpage/Landing';
 function App() {
 
   return (
@@ -14,7 +14,9 @@ function App() {
         <Routes>
         <Route path='/signin' element={<Signin/>} />
           <Route path='/signup' element={<Signup/>} />
-          <Route path='/home' element={<Home />} />        
+          <Route path='/home' element={<Home />} />  
+          <Route path='/Landing' element={<Landing />} />  
+    
           </Routes>
       </div>
     </BrowserRouter>
