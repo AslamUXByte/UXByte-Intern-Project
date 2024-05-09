@@ -3,7 +3,7 @@ import Nav from './Nav'
 import Category from './Category'
 import Featuredprdts from './Featuredprdts'
 import Carouselcomponent from './Carouselcomponent'
-import Hotdeals from './Hotdeals'
+import Hotdeals from 'src\components\Landingpage\hotdeals.js'
 
 const Landing = () => {
   return (
