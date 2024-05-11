@@ -6,7 +6,7 @@ const Carouselcomponent = () => {
 
     var items = [
         {
-            name: "Random Name #1",
+            name: "Nike ",
             description: "Probably the most random thing you have ever seen!"
         },
         {
