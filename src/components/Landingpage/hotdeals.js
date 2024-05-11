@@ -15,7 +15,7 @@ const HotDeal = () => {
           <Typography variant="h5" fontWeight="bold" color="error">01:29:33</Typography>
         </Grid>
        </Grid>
-      <Grid container spacing={0} sx={{ overflowX: 'visible' }}>
+      <Grid container spacing={16} sx={{ overflowX: 'visible' }}>
         <Grid item xs={12} sm={6} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '200px' }}>
             <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>

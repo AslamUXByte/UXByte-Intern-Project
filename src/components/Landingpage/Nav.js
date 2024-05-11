@@ -9,7 +9,7 @@ import Logo from'../Landingpage/Logo.png';
 
 const Nav = () => {
   return (
-    <AppBar position="static" sx={{ bgcolor:'#F0FFFF', color: 'black' }}>
+    <AppBar position="static" sx={{ bgcolor:'#F5FFFA', color: 'black' }}>
       <Toolbar sx={{ maxWidth: '1300px', margin: '0 auto',justifyContent: 'space-between',  }}>
       <Typography variant="h6">
           <img style={{ maxWidth: '10%', height: '10%' }} src={Logo} alt="Image Description" />
