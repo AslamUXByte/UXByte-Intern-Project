@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Grid } from '@mui/material';
-
+// import Hotdeals from "src/components/Landingpage/hotdeals.js";
 const Carouselcomponent = () => {
 
     var items = [
