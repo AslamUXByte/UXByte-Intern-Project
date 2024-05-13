@@ -25,7 +25,7 @@ const HotDeal = () => {
       </Grid>
       <Grid container spacing={0} sx={{ overflowX: 'visible' }}>
         <Grid item xs={3} sm={4} md={2}>
-          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '150px' }}>
+          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '150px',":hover":{border:'2px solid black',borderColor: 'black'} }}>
             <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={iphoneImage} alt="Apple iPhone" />
             <Typography variant="body1" fontWeight="none">Apple iPhone</Typography>
@@ -35,7 +35,7 @@ const HotDeal = () => {
           </Paper>
         </Grid>
         <Grid item xs={3} sm={4} md={2}>
-          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '150px' }}>
+          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '150px',":hover":{border:'2px solid black',borderColor: 'black'} }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={headphoneImage} alt="Samsung Galaxy" />
             <Typography variant="body1" fontWeight="none">Samsung Galaxy</Typography>
@@ -45,7 +45,7 @@ const HotDeal = () => {
           </Paper>
         </Grid>
         <Grid item xs={3} sm={4} md={2}>
-          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
+          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px',":hover":{border:'2px solid black',borderColor: 'black'} }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={iwatch} alt="Apple Iwatch" />
             <Typography variant="body1" fontWeight="none">Apple Iwatch</Typography>
@@ -55,7 +55,7 @@ const HotDeal = () => {
           </Paper>
         </Grid>
         <Grid item xs={3} sm={4} md={2}>
-          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
+          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px',":hover":{border:'2px solid black',borderColor: 'black'} }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={airpodes} alt="Apple Iwatch" />
             <Typography variant="body1" fontWeight="none">Adidas Ultraboost</Typography>
@@ -65,7 +65,7 @@ const HotDeal = () => {
           </Paper>
         </Grid>
         <Grid item xs={3} sm={4} md={2}>
-          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
+          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px',":hover":{border:'2px solid black',borderColor: 'black'} }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={nikeairmax} alt="Nike Air Max" />
             <Typography variant="body1" fontWeight="none">Nike Air Max</Typography>
@@ -75,7 +75,7 @@ const HotDeal = () => {
           </Paper>
         </Grid>
         <Grid item xs={3} sm={4} md={2}>
-          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
+          <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px',":hover":{border:'2px solid black',borderColor: 'black'} }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={Applemac} alt="Apple mac" />
             <Typography variant="body1" fontWeight="none">Apple Mac</Typography>
