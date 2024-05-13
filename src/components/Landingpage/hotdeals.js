@@ -9,18 +9,22 @@ import Applemac from './mac1.png';
 
 const HotDeal = () => {
   return (
-    <Paper elevation={3} sx={{ p: 2, bgcolor: 'background.paper' }}>
-      <Grid container spacing={2} sx={{  textAlign: 'center', height: '5vh', width: '1200px', margin: '60px', marginLeft: '130px' }}>
-      <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', textAlign: 'left' }}>
-        <Typography sx={{ color: '#212B36', fontSize: '30px', fontWeight: '600',marginRight:'1000px' }}>
-          Hotdeals
-        </Typography>
+    <Paper elevation={3} sx={{ p: 2, bgcolor: 'background.paper', width: '85%', margin: 'auto',boxShadow:0 }}>
+      <Grid container spacing={0} alignItems="center">
+        <Grid item xs={0}>
           <Avatar sx={{ bgcolor: 'white' }}>🔥</Avatar>
+        </Grid>
+        <Grid item xs={0}>
+          <Typography sx={{ color: '#212B36', fontSize: '30px', fontWeight: '600', marginRight: '30px' }}>
+            Hotdeals
+          </Typography>
+        </Grid>
+        <Grid item xs={0}>
           <Typography variant="h5" fontWeight="bold" color="error">01:29:33</Typography>
         </Grid>
-       </Grid>
-      <Grid container spacing={10} sx={{ overflowX: 'visible' }}>
-        <Grid item xs={6} sm={4} md={2}>
+      </Grid>
+      <Grid container spacing={0} sx={{ overflowX: 'visible' }}>
+        <Grid item xs={3} sm={4} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '150px' }}>
             <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={iphoneImage} alt="Apple iPhone" />
@@ -30,7 +34,7 @@ const HotDeal = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
+        <Grid item xs={3} sm={4} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: 4, height: '80%',width: '150px' }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={headphoneImage} alt="Samsung Galaxy" />
@@ -40,7 +44,7 @@ const HotDeal = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
+        <Grid item xs={3} sm={4} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={iwatch} alt="Apple Iwatch" />
@@ -50,7 +54,7 @@ const HotDeal = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
+        <Grid item xs={3} sm={4} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={airpodes} alt="Apple Iwatch" />
@@ -60,7 +64,7 @@ const HotDeal = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
+        <Grid item xs={3} sm={4} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={nikeairmax} alt="Nike Air Max" />
@@ -70,7 +74,7 @@ const HotDeal = () => {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
+        <Grid item xs={3} sm={4} md={2}>
           <Paper sx={{ p: 2, bgcolor: 'zinc.100', borderRadius: '12px', boxShadow: '100%', height: '80%',width: '150px' }}>
           <Box sx={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
             <img style={{ width: '50%' }} src={Applemac} alt="Apple mac" />
