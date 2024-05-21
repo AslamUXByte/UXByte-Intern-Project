@@ -1,6 +1,7 @@
 import { Box, CardContent, TextField, Typography, Button, Select, MenuItem } from '@mui/material';
 import React, { useState } from 'react';
 import { Google, Facebook, GitHub } from '@mui/icons-material';
+import axios from 'axios';
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState('');
@@ -42,6 +43,14 @@ const SignUpPage = () => {
     console.log("Phone Number:", phoneNumber);
     console.log("Country Code:", countryCode);
     // Here you can add your logic to submit the form
+    const signupdata={
+      name:fullName,email,password}
+      
+    axios.post("http://localhost:6000/user/user-signup",signupdata
+    ).then((response)=>{
+      const data = response
+      console.log("data",data)
+    })
   };
 
   return (
@@ -51,6 +60,7 @@ const SignUpPage = () => {
         <p sx={{ textAlign: 'starting', mb: 2 }}>Already have an account? <span style={{ color: 'orange' }}>Login</span></p>
 
         <TextField
+        input
           placeholder='Full Name'
           sx={{ mt: 1, width: '100%' }}
           value={fullName}
