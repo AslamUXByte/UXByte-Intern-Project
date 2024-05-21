@@ -7,6 +7,7 @@ import shoes from './shoe1.png';
 import jacket from './jacket1.png';
 import controller from './controller.png';
 
+
 const Featuredprdts = () => {
   return (
     <div>
@@ -197,7 +198,6 @@ const Featuredprdts = () => {
         </Paper>
       </Grid>
     </Grid>
-  );
-};
+
 
 export default Featuredprdts;
