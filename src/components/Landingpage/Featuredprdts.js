@@ -35,7 +35,7 @@ const Featuredprdts = () => {
         </Grid>
 
         <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Paper sx={{ p: 2, bgcolor: '#E6E6FA', borderRadius: '12px', height: '500px', width: '320px', mx: 'auto', ":hover": { bgcolor: "cubic-bezier(0.4, 0, 1)", } }}>
+          <Paper sx={{ p: 2, bgcolor: '#E6E6FA', borderRadius: '12px', height: '500px', width: '320px', mx: 'auto', ":hover": { bgcolor: "#5393ff", } }}>
             <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
               <img style={{ width: '250px', height: '250px', objectFit: 'cover' }} src={monitor} alt="Nike Air Max" />
               <br />

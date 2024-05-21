@@ -56,7 +56,7 @@ const Footer = () => {
           
           <Typography variant="h6" style={{ color: '#212B36', opacity: '.5', fontSize: '13px', fontWeight: '400', fontFamily: "'__Barlow_92d964','__Barlow_Fallback_92d964',Helvetica,Arial,sans-serif",marginBottom: '13px' }}>
 
-          Ubscribe to our newsletter to receive latest articles to your inbox weekly.          </Typography>
+          Subscribe to our newsletter to receive latest articles to your inbox weekly.          </Typography>
 
           <TextField
       variant="filled"
