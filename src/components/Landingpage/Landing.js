@@ -4,6 +4,7 @@ import Category from './Category'
 import Featuredprdts from './Featuredprdts'
 import Carouselcomponent from './Carouselcomponent'
 import HotDeal from './hotdeals'
+import Footer from './Footer'
 // import Hotdeals from 'src/components/Landingpage/hotdeals.js'
 
 const Landing = () => {
@@ -17,7 +18,7 @@ const Landing = () => {
 <HotDeal/>
 
      <Featuredprdts/>
-
+<Footer/>
     </div>
   )
 }

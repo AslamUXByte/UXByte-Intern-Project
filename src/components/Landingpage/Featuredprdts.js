@@ -73,6 +73,7 @@ const Featuredprdts = () => {
                   </Typography>
                 </Box>
               </Grid>
+              <br/>
               <Grid item xs={6}>
               <Box variant="outlined" sx={{textAlign:'left', width: '150px', height: '200px', border: '1px solid #D3D3D3', borderRadius: '10px', '&:hover': { bgcolor: '#F5FFFA' }, mx:'auto',padding:'3px' }}>
                   <Avatar sx={{ bgcolor: '#F5FFFA', width: '120px', height: '120px' }} variant="rounded" src={tesla} />
