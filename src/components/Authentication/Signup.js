@@ -46,7 +46,7 @@ const SignUpPage = () => {
     const signupdata={
       name:fullName,email,password}
       
-    axios.post("http://localhost:6000/user/user-signup",signupdata
+    axios.post("http://localhost:7000/user/user-signup",signupdata
     ).then((response)=>{
       const data = response
       console.log("data",data)
