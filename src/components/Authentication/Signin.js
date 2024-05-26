@@ -1,7 +1,7 @@
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { Box, CardContent, TextField, Typography, Button, Card, Grid, Avatar, Link, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Divider } from '@mui/material';
 import React, { useState } from 'react';
-
+import { Link as RouterLink } from 'react-router-dom'
 
 
 
@@ -45,11 +45,22 @@ const SignIn = () => {
             fontFamily: "'__Public_Sans_f258fb', '__Public_Sans_Fallback_f258fb', Helvetica, Arial, sans-serif"
           }}
         >
-          Don't have an Account? <Link component="span" sx={{ color: '#FF4500',textDecorationColor:'transparent',fontWeight: 500,cursor: 'pointer', '&:hover': {
-              textDecorationColor: '#FF4500',
-            },
-
- }}>Get Started</Link>
+          Don't have an Account? 
+          <Link
+        component={RouterLink}
+        to="/signup"
+        sx={{
+          color: '#FF4500',
+          textDecorationColor: 'transparent',
+          fontWeight: 500,
+          cursor: 'pointer',
+          '&:hover': {
+            textDecorationColor: '#FF4500',
+          },
+        }}
+      >
+        Get Started
+      </Link>
  <br/><br/>
         </Typography>
 

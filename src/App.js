@@ -6,19 +6,21 @@ import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from './components/Homecomponents/Home';
 import React from 'react';
 import Landing from './components/Landingpage/Landing';
+import Product from './components/Prdtpage/Product';
 function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">
         <Routes>
-        <Route path='/signin' element={<Signin/>} />
+        <Route path='/' element={<Signin/>} />
           <Route path='/signup' element={<Signup/>} />
           <Route path='/home' element={<Home />} />  
-          <Route path='/Landing' element={<Landing />} />  
+          <Route path='/Landing' element={<Landing />} /> 
+          <Route path='/product' element={<Product />} /> 
+
     
           </Routes>
-      </div>
+      
     </BrowserRouter>
   );
 }
