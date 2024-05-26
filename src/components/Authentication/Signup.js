@@ -1,7 +1,11 @@
-import { Box, CardContent, TextField, Typography, Button, Select, MenuItem } from '@mui/material';
+import { Box, CardContent, TextField, Typography, Button, Select, MenuItem,Link,Card } from '@mui/material';
 import React, { useState } from 'react';
 import { Google, Facebook, GitHub } from '@mui/icons-material';
 import axios from 'axios';
+import { Link as RouterLink } from 'react-router-dom'
+
+
+
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState('');
@@ -54,11 +58,40 @@ const SignUpPage = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: "100vh", width: '100vw', bgcolor: 'white' }}>
+
+  <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: "100vh", width: '100vw', bgcolor: 'white' }}>
+    <Card sx={{ width: 340, height: 650, p: 2,borderRadius:'20px',boxShadow:'-24px 24px 72px -8px rgba(145, 158, 171, 0.24)' }}>
+
       <CardContent sx={{ width: 300 }}>
         <Typography variant="h5" sx={{ textAlign: 'starting', mb: 2, fontWeight: "bold" }}>GET START</Typography>
-        <p sx={{ textAlign: 'starting', mb: 2 }}>Already have an account? <span style={{ color: 'orange' }}>Login</span></p>
+        <Typography
+          variant="subtitle1" 
+          sx={{
+            fontWeight: 500,
+            fontSize: '0.78rem',
+            opacity: 0.7,
+            fontFamily: "'__Public_Sans_f258fb', '__Public_Sans_Fallback_f258fb', Helvetica, Arial, sans-serif"
+          }}
+        >
+          Don't have an Account? 
 
+        <Link
+        component={RouterLink}
+        to="/"
+        sx={{
+          color: '#FF4500',
+          textDecorationColor: 'transparent',
+          fontWeight: 500,
+          marginLeft:'5px',
+          cursor: 'pointer',
+          '&:hover': {
+            textDecorationColor: '#FF4500',
+          },
+        }}
+      >
+        Login
+      </Link>
+</Typography>
         <TextField
         input
           placeholder='Full Name'
@@ -111,20 +144,26 @@ const SignUpPage = () => {
         <Button size="large" variant='contained' fullWidth onClick={handleRegister} sx={{ mt: 3, bgcolor: 'black' }}>Register</Button>
         <p sx={{ textAlign: 'center', mb: 2 }}>I agree to <u>Terms of Service</u> and <u>Privacy Policy</u></p>
         <Typography variant="body1" sx={{ textAlign: 'center', mb: 2 }}>or continue with</Typography>
-      </CardContent>
 
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 'auto', mb: 2 }}>
         <Box sx={{ mr: 4 }}>
-          <Google sx={{ color: '#DB4437', fontSize: 30 }} />
+          <Google sx={{ color: '#DB4437', fontSize: 28 }} />
         </Box>
         <Box sx={{ mx: 4 }}>
-          <Facebook sx={{ color: '#3b5998', fontSize: 30 }} />
+          <Facebook sx={{ color: '#3b5998', fontSize: 28 }} />
         </Box>
         <Box sx={{ ml: 4 }}>
-          <GitHub sx={{ fontSize: 30 }} />
+          <GitHub sx={{ fontSize: 28 }} />
         </Box>
+       
+
       </Box>
+      </CardContent>
+
+      </Card>
+
     </Box>
+
   );
 };
 
