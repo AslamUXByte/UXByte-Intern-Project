@@ -1,117 +1,122 @@
-import { Avatar, Box, Button, Grid, InputAdornment, TextField, Typography,Stack } from '@mui/material'
-import React from 'react'
-import Divider from '@mui/material/Divider';
-import Logo from './Logo.png'
-import { pink,orange } from '@mui/material/colors';
-
+import React from 'react';
+import {
+  Avatar,
+  Box,
+  Button,
+  Grid,
+  InputAdornment,
+  TextField,
+  Typography,
+  Stack,
+  Divider,
+} from '@mui/material';
+import Logo from './Logo.png';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
-
-
-
-
-
-
-
-
-
-
+import { orange } from '@mui/material/colors';
 
 const Footer = () => {
   return (
-    <div>
-      <Divider component="li" />
-      <Grid container spacing={2} sx={{ alignItems: 'flex-start', height: '80vh' }}>
-        <Grid item xs={5} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'left' }}>
-          <Typography>
-            <img style={{ maxWidth: '65px', height: '25px' }} src={Logo} alt="Image Description" />
-          </Typography>
-          <Typography variant="h6" style={{ color: '#212B36', opacity: '.5', fontSize: '15px', fontWeight: '600', lineHeight: '1.25', fontFamily: "'__Barlow_92d964','__Barlow_Fallback_92d964',Helvetica,Arial,sans-serif", paddingBottom: '50px' }}>
-
+    <Box sx={{ padding: 4, bgcolor: 'white' }}>
+      <Divider sx={{ mb: 4 }} />
+      <Grid container spacing={4} sx={{ alignItems: 'flex-start', minHeight: '60vh' }}>
+        <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <Box sx={{ mb: 4 }}>
+            <img src={Logo} alt="Logo" style={{ maxWidth: '65px', height: '25px' }} />
+          </Box>
+          <Typography variant="body1" sx={{ color: '#212B36', opacity: 0.5, fontWeight: 600, lineHeight: 1.25, mb: 4 }}>
             The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.
           </Typography>
-
-          <Typography variant="h6" style={{ color: '#212B36', fontSize: '17px', fontWeight: '600', lineHeight: '1.25', fontFamily: "'__Barlow_92d964','__Barlow_Fallback_92d964',Helvetica,Arial,sans-serif",  }}>
+          <Typography variant="h6" sx={{ color: '#212B36', fontWeight: 600, mb: 2 }}>
             Community
           </Typography>
-          <Typography variant="h6" style={{ color: '#212B36', fontSize: '15px', fontWeight: '500', lineHeight: '1.25', fontFamily: "'__Barlow_92d964','__Barlow_Fallback_92d964',Helvetica,Arial,sans-serif",  }}>
-            <Typography variant="body2" gutterBottom>
-              Documentation
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-            Changelog
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-            Contributing
-            </Typography>
-
+          <Box sx={{ color: '#212B36', mb: 4 }}>
+            <Typography variant="body2" gutterBottom>Documentation</Typography>
+            <Typography variant="body2" gutterBottom>Changelog</Typography>
+            <Typography variant="body2" gutterBottom>Contributing</Typography>
+          </Box>
+          <Typography variant="h6" sx={{ color: '#212B36', fontWeight: 600, mb: 2 }}>
+            Let’s stay in touch
           </Typography>
-          <br/>
-          <Typography variant="h6" style={{ color: '#212B36', fontSize: '17px', fontWeight: '600', lineHeight: '1.25', fontFamily: "'Poppins', sans-serif",  }}>
-          Let’s stay in touch 
+          <Typography variant="body2" sx={{ color: '#212B36', opacity: 0.5, mb: 2 }}>
+            Subscribe to our newsletter to receive the latest articles to your inbox weekly.
           </Typography>
-          
-          <Typography variant="h6" style={{ color: '#212B36', opacity: '.5', fontSize: '13px', fontWeight: '400', fontFamily: "'__Barlow_92d964','__Barlow_Fallback_92d964',Helvetica,Arial,sans-serif",marginBottom: '13px' }}>
-
-          Subscribe to our newsletter to receive latest articles to your inbox weekly.          </Typography>
-
           <TextField
-      variant="filled"
-      placeholder="Email "
-      size="medium"
-      InputProps={{
-        disableUnderline: true, // Disable the underline
-        endAdornment: (
-          <InputAdornment position="end">
-            <Button
-              variant="contained"
-              size="large"
-              disableElevation
-              sx={{ bgcolor: '#212B36', color: 'white',height:'50px', '&:hover': { bgcolor: 'black',opacity:'.5' } }}
-            >
-              Subscribe
-            </Button>
-          </InputAdornment>
-        ),
-      }}
-      sx={{ bgcolor: 'white', borderRadius: 1, width: '400px' }} // Adjusted width
-    />   
-           <br />
-
-           <Typography variant="body1" gutterBottom>
+            variant="filled"
+            placeholder="Email"
+            size="medium"
+            InputProps={{
+              disableUnderline: true,
+              endAdornment: (
+                <InputAdornment position="end">
+                  <Button
+                    variant="contained"
+                    size="large"
+                    disableElevation
+                    sx={{ bgcolor: '#212B36', color: 'white', height: '50px', '&:hover': { bgcolor: 'black', opacity: 0.5 } }}
+                  >
+                    Subscribe
+                  </Button>
+                </InputAdornment>
+              ),
+            }}
+            sx={{ bgcolor: 'white', borderRadius: 1, width: '100%', maxWidth: '400px', mb: 4 }}
+          />
+          <Typography variant="h6" sx={{ mb: 2 }}>
             Social
-            </Typography>
-            <Stack direction="row" spacing={2}>
-
-<Avatar sx={{bgcolor: 'transparent' }}>
-<FacebookOutlinedIcon style={{ color: orange[500] }} /></Avatar>
-<Avatar sx={{bgcolor: 'transparent' }}>
-<LinkedInIcon style={{ color: orange[500] }} /></Avatar>
-<Avatar sx={{bgcolor: 'transparent' }}>
-<TwitterIcon style={{ color: orange[500] }} /></Avatar>
-
-<Avatar sx={{bgcolor: 'transparent' }}>
-<InstagramIcon style={{ color: orange[500] }} /></Avatar>
-
-
-
-
-</Stack>
-
-        </Grid>
-        <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Typography variant="h6">
-
           </Typography>
+          <Stack direction="row" spacing={2}>
+            <Avatar sx={{ bgcolor: 'transparent' }}>
+              <FacebookOutlinedIcon style={{ color: orange[500] }} />
+            </Avatar>
+            <Avatar sx={{ bgcolor: 'transparent' }}>
+              <LinkedInIcon style={{ color: orange[500] }} />
+            </Avatar>
+            <Avatar sx={{ bgcolor: 'transparent' }}>
+              <TwitterIcon style={{ color: orange[500] }} />
+            </Avatar>
+            <Avatar sx={{ bgcolor: 'transparent' }}>
+              <InstagramIcon style={{ color: orange[500] }} />
+            </Avatar>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={7}>
+          {/* Placeholder for additional content if needed */}
         </Grid>
       </Grid>
+    </Box>
+  );
+};
+const sections = {
+  Marketing: ['Landing', 'Services', 'Case Studies', 'Case Study', 'Blog Posts', 'Blog Post', 'About', 'Contact'],
+  Travel: ['Landing', 'Tours', 'Tour', 'Checkout', 'Order Completed', 'Blog Posts', 'Blog Post', 'About', 'Contact'],
+  Career: ['Landing', 'Jobs', 'Job', 'Blog Posts', 'Blog Post', 'About', 'Contact'],
+  'E-learning': ['Landing', 'Courses', 'Course', 'Blog Posts', 'Blog Post', 'About', 'Contact'],
+  'E-commerce': ['Landing', 'Products', 'Product', 'Cart', 'Checkout', 'Order Completed', 'Wishlist', 'Compare', 'Account Personal', 'Account Wishlist', 'Account Vouchers', 'Account Orders', 'Account Payment'],
+  Common: ['Login Cover', 'Login Illustration', 'Login Background', 'Register Cover', 'Register Illustration', 'Register Background', 'Forgot Password', 'Verify Code', '404 Error', '500 Error', 'Maintenance', 'ComingSoon', 'Pricing 01', 'Pricing 02', 'Payment', 'Support'],
+};
 
+const NavigationMenu = () => {
+  return (
+    <Box sx={{ padding: 4 }}>
+      <Grid container spacing={4}>
+        {Object.keys(sections).map((section) => (
+          <Grid item xs={12} sm={6} md={4} lg={2.4} key={section}>
+            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
+              {section}
+            </Typography>
+            {sections[section].map((item, index) => (
+              <Typography variant="body2" key={index} sx={{ mb: 0.5 }}>
+                {item}
+              </Typography>
+            ))}
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;
